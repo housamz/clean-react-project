@@ -13,9 +13,11 @@ A comprehensive shell script to clean up unnecessary boilerplate files from vari
 ## Supported Project Types
 
 ### Create React App
+
 Removes and cleans:
+
 - `public/favicon.ico`
-- `public/logo192.png` 
+- `public/logo192.png`
 - `public/logo512.png`
 - `public/robots.txt`
 - `src/App.test.js` / `src/App.test.tsx`
@@ -25,18 +27,23 @@ Removes and cleans:
 - Empties `src/App.css` and `src/index.css`
 
 ### Vite
+
 Removes and cleans:
+
 - `public/vite.svg`
 - `src/assets/react.svg`
 - Empties `src/App.css` and `src/index.css`
 
 ### Next.js
+
 Removes and cleans:
+
 - `public/next.svg`
 - `public/vercel.svg`
 - Empties CSS files in `src/app/` or `app/` directories
 
 ### Other/Custom Projects
+
 - Empties common CSS files
 - Updates `package.json` name field
 
@@ -45,25 +52,28 @@ Removes and cleans:
 The script intelligently updates various files based on project type:
 
 ### Common Updates (All Projects)
+
 - **`package.json`**: Updates the "name" field with your project name
 - **CSS files**: Empties boilerplate styles to give you a clean slate
 
 ### Create React App Specific
-- **`public/manifest.json`**: 
+
+- **`public/manifest.json`**:
   - Removes logo references
   - Updates app name and description
 - **`public/index.html`**: Updates page title
-- **`src/App.js` / `src/App.tsx`**: 
+- **`src/App.js` / `src/App.tsx`**:
   - Removes logo imports
   - Removes boilerplate header content
   - Adds clean heading with your app name
-- **`src/index.js` / `src/index.tsx`**: 
+- **`src/index.js` / `src/index.tsx`**:
   - Removes comments
   - Removes `reportWebVitals` imports and usage
 
 ### Vite Specific
+
 - **`index.html`**: Updates page title
-- **`src/App.tsx`**: 
+- **`src/App.tsx`**:
   - Removes asset imports (vite.svg, react.svg)
   - Replaces boilerplate content with clean structure
 
@@ -72,30 +82,32 @@ The script intelligently updates various files based on project type:
 ### Basic Usage
 
 1. **Make the script executable:**
+
    ```bash
-   chmod +x clean_react_project.sh
+   chmod +x clean-react-project.sh
    ```
 
 2. **Run the script:**
+
    ```bash
    # Clean a specific project directory
-   ./clean_react_project.sh /path/to/your/react/project
-   
+   ./clean-react-project.sh /path/to/your/react/project
+
    # Clean the current directory
-   ./clean_react_project.sh
+   ./clean-react-project.sh
    ```
 
 ### Examples
 
 ```bash
 # Clean a project in your home directory
-./clean_react_project.sh ~/dev/my-react-app
+./clean-react-project.sh ~/dev/my-react-app
 
 # Clean a project with absolute path
-./clean_react_project.sh /Users/username/projects/ecommerce-site
+./clean-react-project.sh /Users/username/projects/ecommerce-site
 
 # Clean the current directory (if you're already in the project folder)
-./clean_react_project.sh
+./clean-react-project.sh
 ```
 
 ### Interactive Process
@@ -103,22 +115,25 @@ The script intelligently updates various files based on project type:
 When you run the script, it will:
 
 1. **Detect/Select Project Type:**
+
    ```
    What type of React project is this?
    1) Create React App
-   2) Vite  
+   2) Vite
    3) Next.js
    4) Other/Custom
    5) Auto-detect
    ```
 
 2. **Enter Project Details:**
+
    ```
    Enter the project name (kebab-case, e.g., career-guide) (default: clean-app):
    Enter the friendly name (e.g., Career Guide) (default: Clean App):
    ```
 
 3. **Confirm Operation:**
+
    ```
    This will clean your React project. Continue? (y/N):
    ```
@@ -129,7 +144,7 @@ When you run the script, it will:
 ## Example Session
 
 ```bash
-$ ./clean_react_project.sh ~/dev/my-ecommerce-app
+$ ./clean-react-project.sh ~/dev/my-ecommerce-app
 
 ==================================================
         Generic React Project Cleaner
@@ -146,9 +161,9 @@ What type of React project is this?
 Enter your choice (1-5) [5]: 5
 Detected/Selected project type: vite
 
-Enter the project name (kebab-case, e.g., career-guide) (default: clean-app): 
+Enter the project name (kebab-case, e.g., career-guide) (default: clean-app):
 my-ecommerce-app
-Enter the friendly name (e.g., Career Guide) (default: Clean App): 
+Enter the friendly name (e.g., Career Guide) (default: Clean App):
 My E-commerce App
 
 Project name: my-ecommerce-app
@@ -196,20 +211,22 @@ You can start building your application.
 ## Installation
 
 1. **Download the script:**
+
    ```bash
-   curl -O https://raw.githubusercontent.com/your-repo/clean_react_project.sh
+   curl -O https://raw.githubusercontent.com/housamz/clean-react-project/main/clean-react-project.sh
    # or
-   wget https://raw.githubusercontent.com/your-repo/clean_react_project.sh
+   wget https://raw.githubusercontent.com/housamz/clean-react-project/main/clean-react-project.sh
    ```
 
 2. **Make it executable:**
+
    ```bash
-   chmod +x clean_react_project.sh
+   chmod +x clean-react-project.sh
    ```
 
 3. **Optional: Add to PATH for global usage:**
    ```bash
-   sudo mv clean_react_project.sh /usr/local/bin/clean-react-project
+   sudo mv clean-react-project.sh /usr/local/bin/clean-react-project
    ```
 
 ## Contributing
