@@ -73,29 +73,29 @@ The script intelligently updates various files based on project type:
 
 1. **Make the script executable:**
    ```bash
-   chmod +x clean-project.sh
+   chmod +x clean_react_project.sh
    ```
 
 2. **Run the script:**
    ```bash
    # Clean a specific project directory
-   ./clean-project.sh /path/to/your/react/project
+   ./clean_react_project.sh /path/to/your/react/project
    
    # Clean the current directory
-   ./clean-project.sh
+   ./clean_react_project.sh
    ```
 
 ### Examples
 
 ```bash
 # Clean a project in your home directory
-./clean-project.sh ~/dev/my-react-app
+./clean_react_project.sh ~/dev/my-react-app
 
 # Clean a project with absolute path
-./clean-project.sh /Users/username/projects/ecommerce-site
+./clean_react_project.sh /Users/username/projects/ecommerce-site
 
 # Clean the current directory (if you're already in the project folder)
-./clean-project.sh
+./clean_react_project.sh
 ```
 
 ### Interactive Process
@@ -129,7 +129,7 @@ When you run the script, it will:
 ## Example Session
 
 ```bash
-$ ./clean-project.sh ~/dev/my-ecommerce-app
+$ ./clean_react_project.sh ~/dev/my-ecommerce-app
 
 ==================================================
         Generic React Project Cleaner
@@ -197,19 +197,19 @@ You can start building your application.
 
 1. **Download the script:**
    ```bash
-   curl -O https://raw.githubusercontent.com/your-repo/clean-project.sh
+   curl -O https://raw.githubusercontent.com/your-repo/clean_react_project.sh
    # or
-   wget https://raw.githubusercontent.com/your-repo/clean-project.sh
+   wget https://raw.githubusercontent.com/your-repo/clean_react_project.sh
    ```
 
 2. **Make it executable:**
    ```bash
-   chmod +x clean-project.sh
+   chmod +x clean_react_project.sh
    ```
 
 3. **Optional: Add to PATH for global usage:**
    ```bash
-   sudo mv clean-project.sh /usr/local/bin/clean-react-project
+   sudo mv clean_react_project.sh /usr/local/bin/clean-react-project
    ```
 
 ## Contributing
